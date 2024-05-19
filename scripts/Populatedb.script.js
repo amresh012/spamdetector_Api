@@ -25,7 +25,7 @@ const createUsers = async () => {
 const createContacts = async () => {
   try {
     for (const contact of spamContacts) {
-      await prisma.contacts.create({ data: contact , user_id:users.id });
+      await prisma.contacts.create({ data: contact  });
     }
   } catch (error) {
     console.error("Error creating contacts:", error);

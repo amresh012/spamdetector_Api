@@ -46,9 +46,7 @@ export const NewUserRegistration = asyncHandler(async (req, res) => {
   }
 });
 
-// @desc    Auth user & get token
-// @route   POST /api/users/login
-// @access  Public
+
 export const authticateUser = asyncHandler(async (req, res) => {
   const { phone_No, password } = req.body;
 

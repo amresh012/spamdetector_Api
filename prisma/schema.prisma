@@ -29,7 +29,7 @@ model contact{
   name      String
   phone_No  String
   spam_number Boolean
-  user_id    Int
+  user_id    Int 
   user       User    @relation(fields: [user_id], references: [id])
   createdAt DateTime @default(now())
 } 
